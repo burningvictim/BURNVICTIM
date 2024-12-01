@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images - BURN VICTIM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="hanger">☰</div>
+        <div class="dropdown">
+            <a href="index.html">HOME</a>
+            <a href="images.html">IMAGES</a>
+            <a href="quotes.html">QUOTES</a>
+            <a href="ideas.html">IDEAS</a>
+            <a href="tattoos.html">TATTOOS</a>
+            <a href="music.html">MY MUSIC</a>
+            <a href="art.html">MY ART</a>
+            <a href="jokes.html">JOKES</a>
+        </div>
+    </div>
+    <header>
+        <h1>IMAGES</h1>
+    </header>
+
+    <!-- Add Picture Button -->
+    <div class="add-picture-container">
+        <button id="add-picture-btn">ADD PICTURE</button>
+    </div>
+
+    <!-- Popup Modal for Adding a Picture -->
+    <div id="add-picture-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal-btn">&times;</span>
+            <h2>Add a New Picture</h2>
+            <input type="file" id="image-upload" accept="image/*">
+            <input type="text" id="image-description" placeholder="Enter description">
+            <input type="text" id="image-date" placeholder="Enter date (YYYY-MM-DD)">
+            <button id="submit-image">Submit</button>
+        </div>
+    </div>
+
+    <!-- Image Gallery Section -->
+    <section id="image-gallery">
+        <h1 class="center-text">HALL OF IMAGES</h1>
+        <div class="image-grid" id="image-grid">
+            <!-- Images will be added here dynamically -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
